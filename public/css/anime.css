@@ -1,0 +1,139 @@
+
+@keyframes vague-in {
+  from {
+    transform: translate3d(0, 0, 0); /* 启用gpu加速 */
+    filter: blur(0px);
+  }
+  to {
+    transform: translate3d(0, 0, 0); /* 启用gpu加速 */
+    filter: blur(4px) saturate(80%);
+  }
+}
+
+@keyframes vague-out {
+  from {
+    transform: translate3d(0, 0, 0); /* 启用gpu加速 */
+    filter: blur(4px) saturate(80%);
+  }
+  to {
+    transform: translate3d(0, 0, 0); /* 启用gpu加速 */
+    filter: blur(0px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  } to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  } to {
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes left-move-in {
+  from {
+    transform: translateX(-50%);
+  } to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes left-move-out {
+  from {
+    transform: translateX(0%);
+  } to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes right-move-in {
+  from {
+    transform: translateX(50%);
+  } to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes right-move-out {
+  from {
+    transform: translateX(0%);
+  } to {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes top-move-in {
+  from {
+    transform: translateY(-50%);
+  } to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes top-move-out {
+  from {
+    transform: translateY(0%);
+  } to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes bottom-move-in {
+  from {
+    transform: translateY(50%);
+  } to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes bottom-move-out {
+  from {
+    transform: translateY(0%);
+  } to {
+    transform: translateY(50%);
+  }
+}
+
+@keyframes colorful-in {
+  from {
+    filter: grayscale(1) blur(30px);
+    transform: translate3d(0, 0, 0);
+  } to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes rotate3d-run {
+  from {
+    transform: rotate3d(0, 0, 0, 0);
+  } to {
+    transform: rotate3d(1, 1, 1, 360deg);
+  }
+}
+
+@keyframes rotate2d-in-run {
+  from {
+    /* transform: rotate3d(0, 1, 0, 180deg); */
+  } to {
+    transform: rotate3d(0, 0, 1, 360deg);
+  }
+}
+
+@keyframes rotateZ360deg {
+  from {
+
+  } to {
+    transform: rotateZ(-360deg);
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../public/css/public.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div id="back">
+    返回
+  </div>
+
+  <div id="example-element">
+    <div class="face front" style="background: url(../../public/character/alice.jpg) 50% 50% / cover;"></div>
+    <div class="face back" style="background: url(../../public/character/furan.jpg) 50% 50% / cover;"></div>
+    <div class="face bottom" style="background: url(../../public/character/kazemi.jpg) 50% 50% / cover;"></div>
+    <div class="face top" style="background: url(../../public/character/seiga.jpg) 50% 50% / cover;"></div>
+    <div class="face left" style="background: url(../../public/character/sanae.jpg) 50% 50% / cover;"></div>
+    <div class="face right" style="background: url(../../public/character/yoyoko.jpg) 50% 50% / cover;"></div>
+  </div>
+
+  <script>
+    let back = document.getElementById('back')
+    back.onclick = () => {
+      window.location.href = "../home"
+    }
+  </script>
+</body>
+</html>

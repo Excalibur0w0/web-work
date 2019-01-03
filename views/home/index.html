@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../public/css/public.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div class="app" id="app">
+
+    <div class="top-bar-wap">
+      <div class="top-bar-content">
+        <!-- 合理放logo -->
+        <img class="logo" src="../../public/touhou-Dodgeball.svg">
+        <img class="logo-text" src="../../public/logo.png">
+        <div class="search-wap">
+          <div class="search-input">
+            <input type="text">
+          </div>
+          <div class="search-btn">
+            <img class="search-icon" src="../../public/search.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="top-bar-menu">
+        <div id="menus" class="menu-items">
+          <div class="menu-middle">
+            <span class="menu-item menu-item-select">
+              <span class="menu-item-text">菜单</span>
+            </span>
+            <span class="menu-item">
+              <span class="menu-item-text">菜单</span>
+            </span>
+            <span class="menu-item">
+              <span class="menu-item-text">菜单</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-wap">
+      <div class="home-content">
+        <div class="home-content-top">
+          <div class="content-top-selects">
+            <div>单项</div>
+            <div>单项</div>
+            <div>单项</div>
+            <div>单项</div>
+            <div>单项</div>
+            <div>单项</div>
+            <div>单项</div>
+            <div>单项</div>
+          </div>
+          <div class="content-top-recommend">
+            <span>推荐</span>
+            <span>推荐</span>
+            <span>推荐</span>
+          </div>
+        </div>
+
+        <div class="home-content-ffloor">
+          <div id="img-display" class="img-display"></div>
+          <!-- 已实现通过config目录下的img-display.js动态生成 -->
+          <!-- <div id="img-display" class="img-display">
+                <div class="img-box">
+                  <div class="bg" style="background: url('../../public/01.jpg') 50% 50% / cover; width: 480px;"></div>
+                  <div class="char-box">
+                    <a class="" href="#">风见幽香</a>
+                    <a class="" href="#">爱丽丝 冯格特罗伊德</a>
+                  </div>
+                </div>
+      
+                <div class="img-boxes-ftype"  style="width: 660px;">
+                  <div class="img-box">
+                    <div class="bg" style="background: url('../../public/02.jpg') 50% 50% / cover;"></div>
+                    <div class="char-box">
+                      <a class="" href="#">风见幽香</a>
+                    </div>
+                  </div>
+                  <div class="img-box">
+                    <div class="bg" style="background: url('../../public/03.jpg') 50% 50% / cover;"></div>
+                    <div class="char-box">
+                      <a class="" href="#">风见幽香</a>
+                    </div>
+                  </div>
+                  <div class="img-box">
+                    <div class="bg" style="background: url('../../public/04.jpg') 50% 50% / cover;"></div>
+                    <div class="char-box">
+                      <a class="" href="#">风见幽香</a>
+                    </div>
+                  </div>
+                  <div class="img-box">
+                    <div class="bg" style="background: url('../../public/05.jpg') 50% 50% / cover;"></div>
+                    <div class="char-box">
+                      <a class="" href="#">风见幽香</a>
+                    </div>
+                  </div>
+                </div>
+      
+                <div>
+                  <div class="img-box">
+                    <div class="bg" style="background: url('../../public/01.jpg') 50% 50% / cover; width: 200px;"></div>
+                    <div class="char-box">
+                      <a class="" href="#">风见幽香</a>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+          <!-- 切换图片显示的阵列 -->
+          <div class="switch-button" id="switch-img-button">
+            <img class="unselect" src="../../public/right-arrow.svg" />
+            <img class="selected" src="../../public/right-arrow-select.svg" />
+          </div>
+
+          <div class="list-display">
+            <div class="title">
+              <div class="title-rank">热度排行</div>
+              <div class="title-types">
+                <div class="title-list">国漫</div>
+                <div class="title-list">日漫</div>
+                <div class="title-list">美漫</div>
+              </div>
+            </div>
+
+            <div class="list">
+              <div class="item">列表</div>
+              <div class="item">列表</div>
+              <div class="item">列表</div>
+              <div class="item">列表</div>
+              <div class="item">列表</div>
+              <div class="item">列表</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-content-sfloor" id="go-to-demo">
+          <!-- <div class="cube-img">
+            <div class="face front"></div>
+            <div class="face back"></div>
+            <div class="face top"></div>
+            <div class="face bottom"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+          </div> -->
+          <div class="char-desc-wap">
+            <div class="char-avatar">
+              <div class="avatar"></div>
+              <!-- <div class="name">蕾米莉亚斯卡雷特</div> -->
+            </div>
+
+            <div class="char-desc">
+              <h1>蕾米莉亚斯卡雷特</h1>
+              <p>蕾米莉亚是500岁的吸血鬼领主，夜之王。
+                  她是红魔馆的主人，芙兰朵露的姐姐。
+                  萝莉体型，身穿粉红色的洋装。
+                  作为红魔馆的主人，和一般的贵族一样注重威严和体面。
+                  但性格却跟外表一样，非常任性和孩子气。
+                  她拥有“操纵命运程度的能力”，似乎会使被影响者有很高概率遇上珍奇的事。
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-content-tfloor carousel-wap">
+          <div class="series-title-wap">
+            <div class="series-title">正作
+              <em>游戏</em>
+            </div>
+            <div class="slider-btns" id="slider-formal-game">
+              <div class="select"></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="series-content" id="series-formal-content">
+          </div>
+        </div>
+
+        <div class="home-content-frfloor carousel-wap">
+          <div class="series-title-wap">
+            <div class="series-title">同人
+              <em>游戏</em>
+            </div>
+            <div class="slider-btns" id="slider-recreate-game">
+              <div class="select"></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="series-content" id="series-recreate-content">
+          </div>
+        </div>
+
+        <div class="home-content-fvfloor carousel-wap">
+          <div class="series-title-wap">
+            <div class="series-title">同人
+              <em>动漫</em>
+            </div>
+            <div class="slider-btns" id="slider-anime">
+              <div class="select"></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+          <div class="series-content" id="series-anime-content">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-msg-wap">
+        <span>作者: 邓桥阳</span>
+        <span>完成日期: 2019-1-1</span>
+        <span>学号: 1850410402</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="../../script/app.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
